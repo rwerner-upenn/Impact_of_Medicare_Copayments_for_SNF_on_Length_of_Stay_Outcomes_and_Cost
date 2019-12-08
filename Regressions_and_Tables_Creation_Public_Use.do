@@ -1,6 +1,6 @@
 /********************************************************************************
- ** Goal: Define estimation sample, conducting statistical analysis and creating 
-          tables and figures showed in paper and appendix
+ ** Goal: Define estimation sample, run statistical analysis and create tables 
+          and figures showed in paper and appendix
           
  ** Input data set: "/PATH/SNF_Bene_Period_1216.dta" (Stata data set created in
                     SNF_Stay_and_Outcomes_Data_Set_Creation_Public_Use.sas)
