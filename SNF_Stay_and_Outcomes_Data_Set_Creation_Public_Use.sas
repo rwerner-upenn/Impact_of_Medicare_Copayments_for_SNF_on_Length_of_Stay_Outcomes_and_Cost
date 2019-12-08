@@ -1,11 +1,11 @@
 /********************************************************************************************************************************************************************************
- *Goal: Create SNF stay level data set with SNF benefit day variable, SNF length of stay, Medicare payment variables, prior hospitalization covariates, SNF stay 
-        covariates, patient socioeconomic covariates and patient outcomes.
+ *Goal: Create SNF stay level data set with SNF benefit day variable, SNF length of stay, Medicare payment variables, prior hospitalization 
+        covariates, SNF stay covariates, patient socioeconomic covariates and patient outcomes
 
  *Time period: Jan 1st 2012 - Dec 1st 2015
 
- *Required raw data: Medicare Part A Claim, Medicare Beneficiary Summary File, Provider of Services Current File, Minimum Data Set, LTCFocus Data, American Community Survey
-                     2012-2016 5-Year Estimates Data
+ *Required raw data: Medicare Part A Claim, Medicare Beneficiary Summary File, Provider of Services Current File, Minimum Data Set, LTCFocus 
+                     Data, American Community Survey 2012-2016 5-Year Estimates Data
 
  *Last updated on: 12/08/2019
 ********************************************************************************************************************************************************************************/
