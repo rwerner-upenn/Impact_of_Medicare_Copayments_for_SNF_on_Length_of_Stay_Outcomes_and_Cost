@@ -2276,6 +2276,10 @@ data snf_bpa.SNF_Bene_Period_1216;
 set snf_bpt.SNF_Bene_Period_1216_s_40;
 run;
 
+proc export data=snf_bpa.SNF_Bene_Period_1216 
+            outfile="/PATH/SNF_Bene_Period_1216.dta" dbms=dta replace; 
+run;
+
 ods pdf file="/PATH/SNF_Period_Var_List_1216.pdf";
 title "List of Variables in the SNF Benefit Period Data Set";
 proc contents data=snf_bpa.SNF_Bene_Period_1216 varnum;
