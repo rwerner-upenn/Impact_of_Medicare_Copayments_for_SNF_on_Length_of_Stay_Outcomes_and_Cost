@@ -1,7 +1,7 @@
 /***************************************************************************************************************************************************
  *Goal: Create unplanned hospital readmission in 30/90 days after SNF discharge indicators based on CMS unplanned hospital readmission definition.
 
- *Required raw data: Medicare Part A Claim, Medicare Beneficiary Summary File
+ *Required input data: Medicare Part A Claim, Medicare Beneficiary Summary File
 
  *Last updated on: 12/08/2019
 ***************************************************************************************************************************************************/
