@@ -626,7 +626,7 @@ set tempn.medpar1216_hospsnf_elig_22(drop=snf_hospice LIFE_PRGNS_6MONTH);
 rename LIFE_PRGNS_6MONTH_MAX=LIFE_PRGNS_6MONTH snf_hospice_max=snf_hospice;
 label  LIFE_PRGNS_6MONTH_MAX="Life Prognosis Less Than Six Months"
        snf_hospice_max="Received Hospice Care at SNF";
-run; *26,305,314; 
+run;  *26,305,314; 
 
 *Check the number of records that received hospice care in SNF;
 proc sql; create table check_snf_hospice as select bene_id from tempn.medpar1216_hospsnf_elig_23 where snf_hospice="1"; quit; *649,926 (2.47%);
