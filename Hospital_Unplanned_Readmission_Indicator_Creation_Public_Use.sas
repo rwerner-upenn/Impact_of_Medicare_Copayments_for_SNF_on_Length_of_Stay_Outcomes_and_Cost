@@ -2,7 +2,7 @@
 * Name: Hospital Wide 30-Day Readmission Measure Using Medicare Claims Data      *
 * Creator: YALE/YNHH CORE                                                        *
 * Modifier: Mingyu Qi                                                            *
-* Last updated on: last revised on 12/08/2019                 						         *
+* Last updated on: last revised on 12/08/2019                 						        
 **********************************************************************************;
 
 **********************************************************************************
@@ -2782,8 +2782,8 @@ if _DVRSND01='0' then do;
 	/* any readmission with psych principal diagnosis eq in range of 290-319 that was within 1 day of the discharge date of index admission with discharge dispostion
 		eq 65 is not counted as readmission, added 1/11/2010. ZQ */ 
 
-	/*(1) the admission being evaluated as a potential readmission has a psychiatric principal discharge diagnosis code (ICD-9-CM codes beginning with ‘29’, ‘30’ or ‘31’, 
-	                 for discharges prior to October 1, 2015, or ICD-10-CM codes beginning with ‘F’, for discharges on or after October 1, 2015),  added 05/31/2018. MQ*/
+	/*(1) the admission being evaluated as a potential readmission has a psychiatric principal discharge diagnosis code (ICD-9-CM codes beginning with Â‘29Â’, Â‘30Â’ or Â‘31Â’, 
+	                 for discharges prior to October 1, 2015, or ICD-10-CM codes beginning with Â‘FÂ’, for discharges on or after October 1, 2015),  added 05/31/2018. MQ*/
 	if _diag1=:'F' and (interval in (0,1))  and
 		ddest=65 then Radm_psy=1;
 	else Radm_psy=0; 
