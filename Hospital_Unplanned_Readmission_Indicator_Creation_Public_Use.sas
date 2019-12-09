@@ -11,6 +11,30 @@
 **********************************************************************************;
 OPTIONS COMPRESS=YES;
 
+/* SET UP LIBRARY */
+LIBNAME MedPar '/PATH/Medpar100/CY/';
+LIBNAME Denom '/PATH/Denom100';
+LIBNAME Pac '/PATH/datasets';
+LIBNAME TempN '/PATH/temp';
+LIBNAME sas '/PATH/SAS Files';
+
+/*MEASURE ANALYTIC FILE PRODUCTION LOCATION*/
+LIBNAME dx_data  "/PATH/working_files/Production"; 
+/*LOCATION FOR FINAL MEASURE ANALYTIC FILES*/
+LIBNAME An_files "/PATH/working_files/Output Datasets";
+/*LOCATION FOR FORMATTED COVERAGE DATASET AND FLAG_TRANSFERS DATASET*/ 
+LIBNAME data_an  "/PATH/working_files/Production"; 
+/*STAY DATASET LOCATION*/
+LIBNAME data_sty "/PATH/working_files/Production";
+/*BENE AND COVERAGE DATASET LOCATION*/
+LIBNAME data_ben "/PATH/working_files/Production";
+/*PART A INPATIENT AND OUTPATIENT DATASET LOCATION*/
+LIBNAME data_pta "/PATH/working_files/Output Datasets";
+/*PART B DATASET LOCATION*/
+LIBNAME data_ptb "/PATH/working_files/Output Datasets";
+/*FINAL DATASET PATH*/
+LIBNAME final "/PATH/RWerner_CMS_Readmissions";
+
 /*SET MEASURE VARIABLE  MI HF PN CD SK HW HKC HKR*/
 %LET DX = HW;
 
@@ -34,6 +58,14 @@ OPTIONS COMPRESS=YES;
 /* START AND END YEAR */
 %LET YEAR=0916;
 %LET CONDITION=HW; 
+%LET PATH1= /PATH/working_files/Output Datasets; /*RAW DATA FILES PATH, MUST BE CHANGED */
+%LET PATH2= /PATH/working_files/Output Datasets; /*DERIVED DATA FILES PATH, MUST BE CHANGED */
+%LET PATH3= /PATH/; /*SAS MACROS FILE PATH, MUST BE CHANGED  */
+%let path4= /PATH/Format/CCS_ICD10_PCS; /*AHRQ CCS for ICD10-PCS FOLDER*/
+%let path5= /PATH/Format/CCMAP_ICD10_2015;
+%let path6= /PATH/Format/CCMAP_ICD9_2015;
+%let path7= /PATH/Format/CCS_ICD10_New;
+%let path8= /PATH/Format/CCS_ICD9_New;
 
 **********************************************************************
 * INPUT DATASET NAMES
