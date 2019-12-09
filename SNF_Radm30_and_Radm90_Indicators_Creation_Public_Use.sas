@@ -8,6 +8,34 @@
 
 OPTIONS COMPRESS=YES;
 
+/* SET UP LIBRARY */
+LIBNAME MedPar '/PATH/Medpar100/CY/';
+LIBNAME mp '/PATH/PAC';
+LIBNAME Temp '/PATH/PAC/Temp';
+LIBNAME Denom '/PATH/Denom100';
+LIBNAME Pac '/PATH/datasets';
+LIBNAME TempN '/PATH/temp';
+LIBNAME sas '/PATH/SAS Files';
+libname snf_bpt '/PATH/Temp_Files';
+libname snf_bpa '/PATH/Analytical_Files';
+
+/*MEASURE ANALYTIC FILE PRODUCTION LOCATION*/
+LIBNAME dx_data  "/PATH/working_files/Production"; 
+/*LOCATION FOR FINAL MEASURE ANALYTIC FILES*/
+LIBNAME An_files "/PATH/working_files/Output Datasets";
+/*LOCATION FOR FORMATTED COVERAGE DATASET AND FLAG_TRANSFERS DATASET*/ 
+LIBNAME data_an  "/PATH/working_files/Production"; 
+/*STAY DATASET LOCATION*/
+LIBNAME data_sty "/PATH/working_files/Production";
+/*BENE AND COVERAGE DATASET LOCATION*/
+LIBNAME data_ben "/PATH/working_files/Production";
+/*PART A INPATIENT AND OUTPATIENT DATASET LOCATION*/
+LIBNAME data_pta "/PATH/working_files/Output Datasets";
+/*PART B DATASET LOCATION*/
+LIBNAME data_ptb "/PATH/working_files/Output Datasets";
+/*FINAL DATASET PATH*/
+LIBNAME final "/PATH/RWerner_CMS_Readmissions";
+
 /*SET MEASURE VARIABLE  MI HF PN CD SK HW HKC HKR*/
 %LET DX = HW;
 
